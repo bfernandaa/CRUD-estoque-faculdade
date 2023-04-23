@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #EBEBEB;
+    font-family: Arial, Helvetica, sans-serif;
+   
+    
+}
+body{
+    align-items: center;
+    display: inline-block;
+}
+header{
+    position: absolute;
+    align-items: center;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    background-color: EBEBEB;
+}
+
+#titulo{
+    color: #2D3191;
+    position: absolute;
+    position: relative;
+    
+    
+}
+#btSair{
+    width: 60px;
+    height: 30px;
+    font-size: 15px;
+    border: none;
+    background-color:#D92527;
+    border-radius: 10px;
+    color:#EBEBEB;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.349);
+    cursor: pointer;
+    transition: 0.5s;
+    position: absolute;
+    right: 10px;
+    
+}
+#btSair:hover{
+    background-color: #2D3191;
+    transition: .5s;
+}
+#logoBomPreco{
+    width:250px;
+    height: 100px;
+    background-color: black;
+    position: relative;
+    background-color: transparent;
+}
+#areaProdutos{
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    background-color: #EBEBEB;
+    top: 45%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+    text-align: center;
+    display: inline-block;
+    
+
+}
+#logoBomPreco img{
+    width: 100%;
+    position: relative;
+}
+.btn{
+    padding: 15px;
+    position: relative;
+    background-color: #2d309162;
+    width: 200px;
+    height: 20%;
+    border-radius: 10px;
+    margin: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+    border: none;
+    word-wrap: break-word;
+    color: white;
+    display: inline-block;
+    
+        
+}
+.btn:hover{
+    background-color: #D92527;
+    transition: 0.5s;
+    -xpedu-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+}
+
+#areaForm{
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    top: 60%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    
+    
+}
+#formulario{
+    text-align: left;
+    background-color: transparent;
+    border-radius: 3px;
+    width: 400px;
+    height: 300px;
+    margin: auto;
+    border:none;
+    border-top: 5px solid #2d309162;
+    border-radius: 5px;
+    display: inline-block;
+}
+#formulario h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #2D3191
+
+}
+#formulario label{
+    font-family: arial;
+    font-size: 13px;
+    text-decoration: none;
+    outline: none;
+    color: black;
+    background-color: transparent;
+    padding: 1px;
+    position: left;
+}
+#formulario button{
+     color: #EBEBEB;
+    bottom: 3px;
+    right: 50%;
+    width: 70px;
+    height: 30px;
+    position: absolute;
+    outline: none;
+    border: none;
+    background-color: #2D3191;
+    cursor: pointer;
+}
+#formulario button:hover{
+    background-color: #D92527;
+}
+
+.inputProduto{
+    background-color: transparent;
+    text-decoration: none;
+    margin: 15px;
+    width: 40%;
+    margin: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+    box-shadow: none;
+    border: none;
+    
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+footer{
+
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    text-align: right;
+}
+footer img{
+    margin: 20px;
+    position: relative;
+    width: 80px;
+    
+}

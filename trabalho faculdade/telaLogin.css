@@ -1,0 +1,41 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #EBEBEB;
+    text-decoration: none;
+}
+
+#tela-login{
+   
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 40px;
+    border-radius: 15px;
+    color: #2C3192;
+    text-align: center;
+}
+.input-form{
+    width: 80%;
+    padding: 17px;
+    border: none;
+    outline: none;
+    font-size: 12px;
+    text-align: left;
+    
+}
+button{
+    background-color: #DD2520;
+    border: none;
+    padding: 15px;
+    width: 50%;
+    border-radius: 10px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+button:hover{
+    background-color: #fd5353;
+    transition: 0.5s;
+}
