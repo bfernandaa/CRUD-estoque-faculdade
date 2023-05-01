@@ -41,10 +41,24 @@ header{
     right: 10px;
     
 }
+
+#btSair a{
+    text-decoration: none;
+    background-color: #D92527;
+    color: #fefae0;
+}
+
+
 #btSair:hover{
     background-color: #2D3191;
     transition: .5s;
 }
+
+#btSair a:hover{
+    background-color: #2D3191;
+    transition: .5s;
+}
+
 #logoBomPreco{
     width:250px;
     height: 100px;
@@ -83,7 +97,7 @@ header{
     transition: 0.5s;
     border: none;
     word-wrap: break-word;
-    color: white;
+    color: #fefae0;
     display: inline-block;
     
         

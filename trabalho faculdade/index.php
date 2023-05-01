@@ -16,9 +16,16 @@ session_start();
     <section id="tela-login">
         <div id="logo"><img src="imagens/logo-mercado.PNG" alt=""></div>
         <h1>Gerenciamento de Estoque</h1>
+        <?php
+            if(isset($_SESSION['nao_autenticado'])):
+        ?>
         <div class="notification">
             <p>Usuário ou senha inválidos</p>
         </div>
+        <?php
+            endif;
+            unset($_SESSION['nao_autenticado']);
+        ?>
         <form method="post" action="login.php">
             <input class="input-form" type="text" placeholder="Usuário do Colaborador">
             <input class="input-form" type="password" placeholder="Senha">
