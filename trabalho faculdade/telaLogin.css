@@ -1,5 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
+
+*{
+    font-family: 'Inter', sans-serif;
+}
+
 body{
-    font-family: Arial, Helvetica, sans-serif;
     background-color: #EBEBEB;
     text-decoration: none;
 }
@@ -15,25 +20,42 @@ body{
     color: #2C3192;
     text-align: center;
 }
+
+section, form{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.notification{
+    background-color: #a9a29c;
+    color: #fefae0;
+    border-radius: 15px;
+    font-size: .85rem;
+    padding: 2px;
+    margin-bottom: 10px;
+}
+
 .input-form{
-    width: 80%;
     padding: 17px;
     border: none;
     outline: none;
     font-size: 12px;
     text-align: left;
-    
+   
 }
+
 button{
     background-color: #DD2520;
     border: none;
     padding: 15px;
     width: 50%;
     border-radius: 10px;
-    color: white;
+    color: #fefae0;
     font-size: 15px;
     cursor: pointer;
     transition: 0.5s;
+    align-self: center;
 }
 button:hover{
     background-color: #fd5353;
