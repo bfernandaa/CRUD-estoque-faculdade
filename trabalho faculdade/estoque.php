@@ -1,5 +1,6 @@
 <?php
 session_start();
+include('login.php');
 include('verifica_login.php');
 ?>
 
