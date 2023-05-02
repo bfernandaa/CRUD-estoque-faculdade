@@ -1,4 +1,5 @@
 <?php
+include('conexao.php')
 session_start();
 ?>
 
@@ -26,9 +27,9 @@ session_start();
             endif;
             unset($_SESSION['nao_autenticado']);
         ?>
-        <form method="post" action="login.php">
-            <input class="input-form" type="text" placeholder="Usuário do Colaborador">
-            <input class="input-form" type="password" placeholder="Senha">
+        <form method="POST" action="login.php">
+            <input class="input-form" type="text" placeholder="Insira o usuário do colaborador">
+            <input class="input-form" type="password" placeholder="Insira sua senha">
             <button type="submit">Entrar</button>
         </form>
     </section>
