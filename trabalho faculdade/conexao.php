@@ -1,13 +1,14 @@
 <?php
-define('HOST', '127.0.0.1');
-define('USUARIO', 'root');
-define('SENHA', '');
-define('DATABASE', 'login');
 
-$conexao = mysqli_connect(HOST, USUARIO, SENHA, DATABASE);
+$usuario = 'root';
+$senha = '';
+$database = 'loginbp';
+$host = '127.0.0.1';
 
-if (!$conexao) {
-    die("Connection failed: " . mysqli_connect_error());
+$mysqli = new mysqli($host, $usuario, $senha, $database);
+
+if($mysqli->error) {
+    die("Falha ao conectar ao banco de dados: " . $mysqli->error);
 }
 
 ?>

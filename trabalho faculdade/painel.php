@@ -1,16 +1,10 @@
-<?php
-session_start();
-include('verifica_login.php');
-?>
-
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Controle de Estoque - Bom Preço</title>
+    <title>Bom Preço - Controle de Estoque</title>
     <link rel="stylesheet" href="telaEstoque.css">
 </head>
 <body>
@@ -18,7 +12,7 @@ include('verifica_login.php');
         <button id="btSair"><a href="logout.php">Sair</a></button>
         <div id="logoBomPreco"><img src="imagens/logo-mercado2.PNG" alt=""></div>
         <h1 id="titulo">Gerenciamento de Estoque</h1>
-        <h2>Bem-vindo(a),<?php echo $_SESSION['usuario'];?>
+        <h2>Bem-vindo(a),<?php echo $_SESSION['nome']; ?>
     </header>
     <section id="areaProdutos">
         <button id="actionProdutoCadastrar" class="btn" >Cadastrar Produto</button>
@@ -50,5 +44,3 @@ include('verifica_login.php');
     <script src="script.js"></script>
 </body>
 </html>
-
-
