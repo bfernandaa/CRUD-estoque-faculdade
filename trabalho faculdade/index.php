@@ -57,8 +57,8 @@ if(isset($_POST['email']) || isset($_POST['senha'])) {
             <p>Usuário ou senha inválidos</p>
         </div>
         <form method="POST" action="">
-            <input class="input-form" type="email" placeholder="Insira o usuário do colaborador">
-            <input class="input-form" type="password" placeholder="Insira sua senha">
+            <input class="input-form" type="email" name="email" placeholder="Insira o usuário do colaborador">
+            <input class="input-form" type="password" name="senha" placeholder="Insira sua senha">
             <button type="submit">Entrar</button>
         </form>
     </section>
