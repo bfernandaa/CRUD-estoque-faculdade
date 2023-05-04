@@ -13,9 +13,8 @@ function mudarSessao(){
         <div id = "formulario">
         <h1>Cadastrar Produto</h1>
             <input class="inputProduto" id="IdProduto" type="text" placeholder="ID Produto"><br>
-            <input class="inputProduto" id="Categoria" type="text" placeholder="Categoria"><br>
-            <input class="inputProduto" id="Qtde" type="text" placeholder="Qtde:"><br>
             <input class="inputProduto" id="Descricao" type="text" placeholder="Descrição">
+            <input class="inputProduto" id="Qtde" type="number" placeholder="Quantidade"><br>
             <button> Cadastrar </button>
     </div>
         `    
@@ -25,7 +24,7 @@ function mudarSessao(){
         `
         <div id = "formulario">
         <h1>Consultar Produto</h1>
-            <input class="inputProduto" id="IdProduto" type="text"placeholder="Id do Produto"><br>
+            <input class="inputProduto" id="IdProduto" type="text"placeholder="ID do Produto"><br>
         <button> Consultar </button>
         
     </div>
@@ -35,8 +34,10 @@ function mudarSessao(){
         `
         <div id = "formulario">
         <h1>Editar Produto</h1>
-            <input class="inputProduto" id="IdProduto" type="text"placeholder="Id do Produto"><br>
-        <button> Consultar </button>
+            <input class="inputProduto" id="IdProduto" type="text" placeholder="ID Produto"><br>
+            <input class="inputProduto" id="Descricao" type="text" placeholder="Descrição">
+            <input class="inputProduto" id="Qtde" type="number" placeholder="Quantidade"><br>
+        <button> Editar </button>
         `
         
     }else{
@@ -44,9 +45,9 @@ function mudarSessao(){
         `
         <div id = "formulario">
         <h1>Excluir Produto</h1>
-            <input class="inputProduto" id="IdProduto" type="text"placeholder="Id do Produto"><br>
-            <input class="inputProduto" id="IdProduto" type="text"placeholder="Motivo:">
-        <button> Consultar </button
+            <input class="inputProduto" id="IdProduto" type="text"placeholder="ID do Produto"><br>
+            <input class="inputProduto" id="IdProduto" type="text"placeholder="Justificativa">
+        <button> Excluir </button
         `
     }
 }

@@ -1,31 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     background-color: #EBEBEB;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Inter', sans-serif;
    
     
 }
 body{
     align-items: center;
-    display: inline-block;
+    /* display: inline-block; */
 }
 header{
-    position: absolute;
+    /* position: absolute;
     align-items: center;
     text-align: center;
-    display: inline-block;
-    width: 100%;
-    background-color: EBEBEB;
+    display: inline-block; */
+    display: flex;
+    flex-direction: column;
+    
+    margin-top: 5px;
+    /* width: 100%; */
+    background-color: #EBEBEB;
 }
 
 #titulo{
     color: #2D3191;
     position: absolute;
     position: relative;
-    
+    align-self: center;
     
 }
+
+#welcome{
+    align-self: center;
+    color: #8d99ae
+}
+
 #btSair{
     width: 60px;
     height: 30px;
@@ -56,7 +68,7 @@ header{
 
 #btSair a:hover{
     background-color: #2D3191;
-    transition: .5s;
+    transition: .2s;
 }
 
 #logoBomPreco{
@@ -67,16 +79,16 @@ header{
     background-color: transparent;
 }
 #areaProdutos{
-    position: absolute;
+    position: absolute; 
     width: 100%;
-    height: 300px;
+    height: 200px;
+    text-align: center;
     background-color: #EBEBEB;
     top: 45%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
     align-items: center;
-    text-align: center;
     display: inline-block;
     
 
@@ -86,7 +98,7 @@ header{
     position: relative;
 }
 .btn{
-    padding: 15px;
+    /* padding: 15px; */
     position: relative;
     background-color: #2d309162;
     width: 200px;
@@ -114,7 +126,7 @@ header{
     text-align: center;
     position: absolute;
     width: 100%;
-    top: 60%;
+    top: 65%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
@@ -126,7 +138,7 @@ header{
     text-align: left;
     background-color: transparent;
     border-radius: 3px;
-    width: 400px;
+    width: 700px;
     height: 300px;
     margin: auto;
     border:none;
@@ -135,8 +147,9 @@ header{
     display: inline-block;
 }
 #formulario h1{
-    font-family: Arial, Helvetica, sans-serif;
-    color: #2D3191
+    font-family: 'Inter', sans-serif;
+    color: #2D3191;
+    font-size: 16px;
 
 }
 #formulario label{
@@ -150,14 +163,15 @@ header{
     position: left;
 }
 #formulario button{
-     color: #EBEBEB;
-    bottom: 3px;
-    right: 50%;
-    width: 70px;
+    color: #EBEBEB;
+    /* right: 50%; */
+    margin: 5px;
+    width: 75px;
     height: 30px;
     position: absolute;
     outline: none;
     border: none;
+    border-radius: 5px;
     background-color: #2D3191;
     cursor: pointer;
 }
@@ -166,18 +180,19 @@ header{
 }
 
 .inputProduto{
-    background-color: transparent;
+    background-color: #fefae0;
     text-decoration: none;
     margin: 15px;
-    width: 40%;
-    margin: 20px;
+    padding: 5px;
+    width: 95%;
+    margin: 15px;
     cursor: pointer;
     transition: 0.5s;
     box-shadow: none;
     border: none;
-    
     box-shadow: 0 0 0 0;
     outline: 0;
+    
 }
 footer{
 
@@ -186,10 +201,12 @@ footer{
     position: fixed;
     width: 100%;
     text-align: right;
+    height: 60px;
 }
 footer img{
     margin: 20px;
     position: relative;
-    width: 80px;
+    width: 45px;
+    
     
 }
