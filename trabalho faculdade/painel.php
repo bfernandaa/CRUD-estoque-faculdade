@@ -18,7 +18,7 @@ if(!isset($_SESSION)) {
         <button id="btSair"><a href="logout.php">Sair</a></button>
         <div id="logoBomPreco"><img src="imagens/logo-mercado2.PNG" alt=""></div>
         <h1 id="titulo">Gerenciamento de Estoque</h1>
-        <h3 id="welcome">Bem-vindo(a),<?php echo $_SESSION['email']; ?></h3>
+        <h3 id="welcome">Bem-vindo(a),<?php echo $_SESSION['nome']; ?></h3>
     </header>
     <section id="areaProdutos">
         <button id="actionProdutoCadastrar" class="btn" >Cadastrar Produto</button>
