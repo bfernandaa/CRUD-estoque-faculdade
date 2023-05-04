@@ -11,7 +11,7 @@ if(!isset($_SESSION)) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bom Preço - Controle de Estoque</title>
-    <link rel="stylesheet" href="telaEstoque.css">
+    <link rel="stylesheet" href="telaEstoque.css" type="text/css">
 </head>
 <body>
     <header>
