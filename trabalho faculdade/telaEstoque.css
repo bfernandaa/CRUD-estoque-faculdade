@@ -13,15 +13,9 @@ body{
     /* display: inline-block; */
 }
 header{
-    /* position: absolute;
-    align-items: center;
-    text-align: center;
-    display: inline-block; */
     display: flex;
     flex-direction: column;
-    
     margin-top: 5px;
-    /* width: 100%; */
     background-color: #EBEBEB;
 }
 
