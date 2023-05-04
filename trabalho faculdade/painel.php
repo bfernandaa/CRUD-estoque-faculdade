@@ -1,7 +1,5 @@
 <?php
-if(!isset($_SESSION)) {
-    session_start();
-}
+include('valida_login.php');
 ?>
 
 <!DOCTYPE html>
