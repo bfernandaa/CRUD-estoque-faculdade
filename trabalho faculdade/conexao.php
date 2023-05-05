@@ -2,7 +2,7 @@
 
 $usuario = 'root';
 $senha = '';
-$database = 'loginbp';
+$database = 'bompreco';
 $host = '127.0.0.1';
 
 $mysqli = new mysqli($host, $usuario, $senha, $database);
