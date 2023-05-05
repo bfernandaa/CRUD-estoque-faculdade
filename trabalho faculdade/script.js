@@ -10,44 +10,46 @@ function mudarSessao(){
     if(actionType == "Cadastrar Produto") {
        elementoHtml.innerHTML +=
         `
-        <div id = "formulario">
-        <h1>Cadastrar Produto</h1>
-            <input class="inputProduto" id="IdProduto" type="text" placeholder="ID Produto"><br>
-            <input class="inputProduto" id="Descricao" type="text" placeholder="Descrição">
-            <input class="inputProduto" id="Qtde" type="number" placeholder="Quantidade"><br>
-            <button> Cadastrar </button>
-    </div>
+        <form action="cadastrar.php" method="POST" id ="formulario">
+            <h2>Cadastrar Produto</h2>
+            <input class="inputProduto" name="idproduto" type="text" placeholder="ID Produto"><br>
+            <input class="inputProduto" name="descricao" type="text" placeholder="Descrição do Produto">
+            <input class="inputProduto" name="valor" type="number" placeholder="Valor do Produto">
+            <input class="inputProduto" name="quantidade" type="number" placeholder="Quantidade"><br>
+            <button type="submit">Cadastrar</button>
+        </form>
         `    
 
     } else if(actionType == "Consultar Produto"){
         elementoHtml.innerHTML +=
         `
-        <div id = "formulario">
-        <h1>Consultar Produto</h1>
-            <input class="inputProduto" id="IdProduto" type="text"placeholder="ID do Produto"><br>
-        <button> Consultar </button>
-        
-    </div>
+        <form action="consultar.php" method="POST" id = "formulario">
+            <h2>Consultar Produto</h2>
+            <input class="inputProduto" name="idproduto" type="text"placeholder="ID do Produto"><br>
+            <button type="submit">Consultar</button>
+        </form>
         `
     } else if(actionType == "Editar Produto"){
         elementoHtml.innerHTML +=
         `
-        <div id = "formulario">
-        <h1>Editar Produto</h1>
-            <input class="inputProduto" id="IdProduto" type="text" placeholder="ID Produto"><br>
-            <input class="inputProduto" id="Descricao" type="text" placeholder="Descrição">
-            <input class="inputProduto" id="Qtde" type="number" placeholder="Quantidade"><br>
-        <button> Editar </button>
+        <form action="alterar.php" method="POST" id = "formulario">
+        <h2>Editar Produto</h2>
+            <input class="inputProduto" name="idproduto" type="text" placeholder="ID Produto"><br>
+            <input class="inputProduto" name="descricao" type="text" placeholder="Descrição">
+            <input class="inputProduto" name="quantidade" type="number" placeholder="Quantidade"><br>
+            <button type="submit">Editar</button>
+        </form>
         `
         
     }else{
         elementoHtml.innerHTML +=
         `
-        <div id = "formulario">
-        <h1>Excluir Produto</h1>
-            <input class="inputProduto" id="IdProduto" type="text"placeholder="ID do Produto"><br>
-            <input class="inputProduto" id="IdProduto" type="text"placeholder="Justificativa">
-        <button> Excluir </button
+        <form action="excluir.php" method="POST" id = "formulario">
+        <h2>Excluir Produto</h2>
+            <input class="inputProduto" name="IdProduto" type="text"placeholder="ID do Produto"><br>
+            <input class="inputProduto" name="justificativa" type="text"placeholder="Justificativa">
+            <button type="submit">Excluir</button>
+        </form>
         `
     }
 }
