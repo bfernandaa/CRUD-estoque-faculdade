@@ -55,7 +55,7 @@ if(isset($_POST['email']) || isset($_POST['senha'])) {
         <div id="logo"><img src="imagens/logo-mercado.PNG" alt=""></div>
         <h1>Gerenciamento de Estoque</h1>
         <?php
-            if(isset($_SESSION['nao_autenticado'])):
+            if($_SESSION['nao_autenticado']):
         ?>
         <div class="notification">
             <p>Usuário ou senha inválidos</p>
