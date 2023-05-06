@@ -53,9 +53,9 @@ if(isset($_POST['email']) || isset($_POST['senha'])) {
     <section id="tela-login">
         <div id="logo"><img src="imagens/logo-mercado.PNG" alt=""></div>
         <h1>Gerenciamento de Estoque</h1>
-        <div id="notification">
+        <!-- <div id="notification">
             <p>Usuário ou senha inválidos</p>
-        </div>
+        </div> -->
         <form method="POST" action="">
             <input class="input-form" type="email" name="email" placeholder="Insira o usuário do colaborador">
             <input class="input-form" type="password" name="senha" placeholder="Insira sua senha">
