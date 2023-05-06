@@ -27,7 +27,7 @@ section, form{
     gap: 12px;
 }
 
-.notification{
+#notification{
     background-color: #a9a29c;
     color: #fefae0;
     border-radius: 15px;
