@@ -10,4 +10,9 @@ $valor = $_POST["valor"];
 
 $cadastro = "INSERT INTO produtos (descricao, quantidade, valor) VALUES ('$descricao', '$quantidade', '$valor')";
 
+if (mysqli_query($cadastro)) {
+    echo "New record created successfully";
+} else {
+    echo "Error: " . $cadastro . "<br>" . mysqli_error($cadastro);
+}
 ?>
