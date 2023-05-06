@@ -36,7 +36,7 @@ function mudarSessao(){
         <h2>Editar Produto</h2>
             <input class="inputProduto" name="idproduto" type="text" placeholder="ID Produto"><br>
             <input class="inputProduto" name="descricao" type="text" placeholder="Descrição">
-            <input class="inputProduto" name="quantidade" type="number" placeholder="Quantidade"><br>
+            <input class="inputProduto" name="quantidade" type="number" placeholder="Quantidade">
             <input class="inputProduto" name="valor" type="number" placeholder="Valor do Produto">
             <button type="submit">Editar</button>
         </form>
