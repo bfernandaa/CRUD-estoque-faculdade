@@ -34,7 +34,7 @@ function mudarSessao(){
         `
         <form action="alterar.php" method="POST" id = "formulario">
         <h2>Editar Produto</h2>
-            <input class="inputProduto" name="idproduto" type="text" placeholder="ID Produto"><br>
+            <input class="inputProduto" name="idproduto" type="text" placeholder="ID Produto">
             <input class="inputProduto" name="descricao" type="text" placeholder="Descrição">
             <input class="inputProduto" name="quantidade" type="number" placeholder="Quantidade">
             <input class="inputProduto" name="valor" type="number" placeholder="Valor do Produto">
