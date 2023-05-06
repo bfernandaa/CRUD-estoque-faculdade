@@ -16,7 +16,7 @@ function mudarSessao(){
             <input class="inputProduto" name="descricao" type="text" placeholder="Descrição do Produto">
             <input class="inputProduto" name="quantidade" type="number" placeholder="Quantidade"><br>
             <input class="inputProduto" name="valor" type="number" placeholder="Valor do Produto">
-            <button type="submit" name="btncadastro">Cadastrar</button>
+            <input type="submit" name="btncadastro">Cadastrar</input>
         </form>
         `    
 
@@ -26,7 +26,7 @@ function mudarSessao(){
         <form action="consultar.php" method="POST" id = "formulario">
             <h2>Consultar Produto</h2>
             <input class="inputProduto" name="idproduto" type="text"placeholder="ID do Produto"><br>
-            <button type="submit">Consultar</button>
+            <input type="submit">Consultar</input>
         </form>
         `
     } else if(actionType == "Editar Produto"){
@@ -38,7 +38,7 @@ function mudarSessao(){
             <input class="inputProduto" name="descricao" type="text" placeholder="Descrição">
             <input class="inputProduto" name="quantidade" type="number" placeholder="Quantidade">
             <input class="inputProduto" name="valor" type="number" placeholder="Valor do Produto">
-            <button type="submit">Editar</button>
+            <input type="submit">Editar</input>
         </form>
         `
         
@@ -49,7 +49,7 @@ function mudarSessao(){
         <h2>Excluir Produto</h2>
             <input class="inputProduto" name="IdProduto" type="text"placeholder="ID do Produto"><br>
             <input class="inputProduto" name="justificativa" type="text"placeholder="Justificativa">
-            <button type="submit">Excluir</button>
+            <input type="submit">Excluir</input>
         </form>
         `
     }
