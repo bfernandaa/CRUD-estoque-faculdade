@@ -7,11 +7,12 @@ $descricao = $_POST["descricao"];
 $quantidade = $_POST["quantidade"];
 $valor = $_POST["valor"];
 $btn = $_POST["cadastro"];
+$id = $_SESSION['id'];
 
 // echo "<pre>";print_r($_POST);echo "</pre>";
 
 
-$sql = "INSERT INTO produtos (descricao, quantidade, valor, usuario_modificador) VALUES ('$descricao', '$quantidade', '$valor', $_SESSION['id'])";
+$sql = "INSERT INTO produtos (descricao, quantidade, valor, usuario_modificador) VALUES ('$descricao', '$quantidade', '$valor', '$id')";
 
 echo $sql;
 
