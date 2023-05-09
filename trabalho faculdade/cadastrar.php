@@ -1,5 +1,6 @@
 <?php
 include('conexao.php');
+session_start();
 
 // $idproduto = $_POST["idproduto"];
 $descricao = $_POST["descricao"];
@@ -10,7 +11,7 @@ $btn = $_POST["cadastro"];
 // echo "<pre>";print_r($_POST);echo "</pre>";
 
 
-$sql = "INSERT INTO produtos (descricao, quantidade, valor) VALUES ('$descricao', '$quantidade', '$valor')";
+$sql = "INSERT INTO produtos (descricao, quantidade, valor, usuario_modificador) VALUES ('$descricao', '$quantidade', '$valor', $_SESSION['id'])";
 
 echo $sql;
 
