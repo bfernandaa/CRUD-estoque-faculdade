@@ -15,7 +15,7 @@ $id = $_SESSION['id'];
 $sql = "SELECT codproduto, descricao, marca, quantidade, valor FROM produtos WHERE codproduto=$codproduto";
 $query = $mysqli->query($sql) or die("Falha na execução do código SQL: " . $mysqli->error);
 
-while($exibe = mysqli_fetch_row($sql)){
+while($exibe = mysqli_fetch_row($query, $sql)){
 
     echo  "<tr><td>Código do Produto</td>";
     echo "<td>".$exibe[1]."</td></tr>";
