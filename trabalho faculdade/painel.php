@@ -42,9 +42,8 @@ include('valida_login.php');
         
     </section>
     
-    <footer>
-        <img src="imagens/imagemRodape2.png" alt="">
-    </footer>
+    <img src="imagens/imagemRodape2.png" alt="" id="rodape">
+    
     <script src="script.js"></script>
 </body>
 </html>

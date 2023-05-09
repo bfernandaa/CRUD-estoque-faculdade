@@ -188,7 +188,15 @@ header{
     outline: 0;
     
 }
-footer{
+
+#rodape{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin-right: 30px;
+    margin-bottom: 15px;
+}
+/* footer{
 
     width: 100%;
     bottom: 0;
@@ -203,4 +211,4 @@ footer img{
     width: 45px;
     
     
-}
+} */
