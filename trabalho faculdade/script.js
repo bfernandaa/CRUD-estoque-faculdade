@@ -10,23 +10,24 @@ function mudarSessao(){
     if(actionType == "Cadastrar Produto") {
        elementoHtml.innerHTML +=
         `
-        <form action="cadastrar.php" method="POST" id ="formulario">
+        <form action="cadastrar.php" method="POST" id="formulario">
             <h2>Cadastrar Produto</h2>
-            <input class="inputProduto" name="idproduto" type="text" placeholder="ID Produto"><br>
+            <input class="inputProduto" name="codproduto" type="number" placeholder="Código do Produto"><br>
             <input class="inputProduto" name="descricao" type="text" placeholder="Descrição do Produto">
+            <input class="inputProduto" name="marca" type="text" placeholder="Marca">
             <input class="inputProduto" name="quantidade" type="number" placeholder="Quantidade"><br>
             <input class="inputProduto" name="valor" type="number" placeholder="Valor do Produto">
-            <input name="cadastro" type="submit">Cadastrar</input>
+            <input name="cadastro" id="btnform" type="submit" value="Cadastrar">
         </form>
         `    
 
     } else if(actionType == "Consultar Produto"){
         elementoHtml.innerHTML +=
         `
-        <form action="consultar.php" method="POST" id = "formulario">
+        <form action="consultar.php" method="POST" id="formulario">
             <h2>Consultar Produto</h2>
-            <input class="inputProduto" name="idproduto" type="text"placeholder="ID do Produto"><br>
-            <input type="submit">Consultar</input>
+            <input class="inputProduto" name="codproduto" type="number" placeholder="Código do Produto"><br>
+            <input name="consulta" id="btnform" type="submit" value="Consultar">
         </form>
         `
     } else if(actionType == "Editar Produto"){
@@ -34,11 +35,12 @@ function mudarSessao(){
         `
         <form action="alterar.php" method="POST" id = "formulario">
         <h2>Editar Produto</h2>
-            <input class="inputProduto" name="idproduto" type="text" placeholder="ID Produto">
-            <input class="inputProduto" name="descricao" type="text" placeholder="Descrição">
-            <input class="inputProduto" name="quantidade" type="number" placeholder="Quantidade">
+            <input class="inputProduto" name="codproduto" type="number" placeholder="Código do Produto"><br>
+            <input class="inputProduto" name="descricao" type="text" placeholder="Descrição do Produto">
+            <input class="inputProduto" name="marca" type="text" placeholder="Marca">
+            <input class="inputProduto" name="quantidade" type="number" placeholder="Quantidade"><br>
             <input class="inputProduto" name="valor" type="number" placeholder="Valor do Produto">
-            <input type="submit">Editar</input>
+            <input name="alteracao" id="btnform" type="submit" value="Editar">
         </form>
         `
         
@@ -47,9 +49,9 @@ function mudarSessao(){
         `
         <form action="excluir.php" method="POST" id = "formulario">
         <h2>Excluir Produto</h2>
-            <input class="inputProduto" name="IdProduto" type="text"placeholder="ID do Produto"><br>
+            <input class="inputProduto" name="codproduto" type="number" placeholder="Código do Produto"><br>
             <input class="inputProduto" name="justificativa" type="text"placeholder="Justificativa">
-            <input type="submit">Excluir</input>
+            <input name="exclusao" id="btnform" type="submit" value="Excluir">
         </form>
         `
     }

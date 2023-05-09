@@ -156,7 +156,7 @@ header{
     padding: 1px;
     position: left;
 }
-#formulario button{
+#btnform {
     color: #EBEBEB;
     /* right: 50%; */
     margin: 5px;
@@ -169,7 +169,7 @@ header{
     background-color: #2D3191;
     cursor: pointer;
 }
-#formulario button:hover{
+#btnform:hover {
     background-color: #D92527;
 }
 

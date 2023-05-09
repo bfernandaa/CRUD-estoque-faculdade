@@ -2,20 +2,17 @@
 include('conexao.php');
 session_start();
 
-// $idproduto = $_POST["idproduto"];
+$codproduto = $_POST["codproduto"];
 $descricao = $_POST["descricao"];
+$marca = $_POST["marca"];
 $quantidade = $_POST["quantidade"];
 $valor = $_POST["valor"];
 $btn = $_POST["cadastro"];
 $id = $_SESSION['id'];
 
-// echo "<pre>";print_r($_POST);echo "</pre>";
 
 
-$sql = "INSERT INTO produtos (descricao, quantidade, valor, usuario_modificador) VALUES ('$descricao', '$quantidade', '$valor', '$id')";
+$sql = "INSERT INTO produtos (codproduto, descricao, marca, quantidade, valor, usuario_modificador) VALUES ('$descricao', '$quantidade', '$valor', '$id')";
+$query = $mysqli->query($sql) or die("Falha na execução do código SQL: " . $mysqli->error);
 
-echo $sql;
-
-// $sql_code = "SELECT * FROM usuarios WHERE email = '$email' AND senha = '$senha'";
-$sql_query = $mysqli->query($sql) or die("Falha na execução do código SQL: " . $mysqli->error);
 ?>
