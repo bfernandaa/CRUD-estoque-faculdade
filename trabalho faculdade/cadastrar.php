@@ -7,6 +7,8 @@ $quantidade = $_POST["quantidade"];
 $valor = $_POST["valor"];
 $btn = $_POST["cadastro"];
 
+echo "<pre>";print_r($_POST);echo "</pre>";
+
 
 $cadastro = "INSERT INTO produtos (descricao, quantidade, valor) VALUES ('$descricao', '$quantidade', '$valor')";
 
