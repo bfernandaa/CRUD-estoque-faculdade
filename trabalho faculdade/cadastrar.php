@@ -12,7 +12,7 @@ $id = $_SESSION['id'];
 
 
 
-$sql = "INSERT INTO produtos (codproduto, descricao, marca, quantidade, valor, usuario_modificador) VALUES ('$descricao', '$quantidade', '$valor', '$id')";
+$sql = "INSERT INTO produtos (codproduto, descricao, marca, quantidade, valor, usuario_modificador) VALUES ('$codproduto', '$descricao', '$marca', '$quantidade', '$valor', '$id')";
 $query = $mysqli->query($sql) or die("Falha na execução do código SQL: " . $mysqli->error);
 
 ?>
