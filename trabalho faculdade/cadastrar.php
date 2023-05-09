@@ -7,10 +7,13 @@ $quantidade = $_POST["quantidade"];
 $valor = $_POST["valor"];
 $btn = $_POST["cadastro"];
 
-echo "<pre>";print_r($_POST);echo "</pre>";
+// echo "<pre>";print_r($_POST);echo "</pre>";
 
 
-$cadastro = "INSERT INTO produtos (descricao, quantidade, valor) VALUES ('$descricao', '$quantidade', '$valor')";
+$sql = "INSERT INTO produtos (descricao, quantidade, valor) VALUES ('$descricao', '$quantidade', '$valor')";
 
+echo $sql;
 
+// $sql_code = "SELECT * FROM usuarios WHERE email = '$email' AND senha = '$senha'";
+$sql_query = $mysqli->query($sql) or die("Falha na execução do código SQL: " . $mysqli->error);
 ?>
