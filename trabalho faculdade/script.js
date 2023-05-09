@@ -16,7 +16,7 @@ function mudarSessao(){
             <input class="inputProduto" name="descricao" type="text" placeholder="Descrição do Produto">
             <input class="inputProduto" name="quantidade" type="number" placeholder="Quantidade"><br>
             <input class="inputProduto" name="valor" type="number" placeholder="Valor do Produto">
-            <input name="btncadastro" type="submit">Cadastrar</input>
+            <input name="cadastro" type="submit">Cadastrar</input>
         </form>
         `    
 
