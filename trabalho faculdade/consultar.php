@@ -15,6 +15,6 @@ $id = $_SESSION['id'];
 $sql = "SELECT codproduto, descricao, marca, quantidade, valor FROM produtos WHERE codproduto=$codproduto";
 $query = $mysqli->query($sql) or die("Falha na execução do código SQL: " . $mysqli->error);
 
-header("Location: painel.php");
+// header("Location: painel.php");
 
 ?>
