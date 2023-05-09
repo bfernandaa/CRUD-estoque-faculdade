@@ -12,7 +12,7 @@ $id = $_SESSION['id'];
 
 
 
-$sql = "UPDATE produtos SET descricao=$descricao, marca=$marca, quantidade=$quantidade, valor=$valor WHERE codproduto=$codproduto";
+$sql = "UPDATE produtos SET descricao={$descricao}, marca={$marca}, quantidade={$quantidade}, valor={$valor} WHERE codproduto={$codproduto}";
 $query = $mysqli->query($sql) or die("Falha na execução do código SQL: " . $mysqli->error);
 
 header("Location: painel.php");
