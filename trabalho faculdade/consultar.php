@@ -3,10 +3,6 @@ include('conexao.php');
 session_start();
 
 $codproduto = $_POST["codproduto"];
-$descricao = $_POST["descricao"];
-$marca = $_POST["marca"];
-$quantidade = $_POST["quantidade"];
-$valor = $_POST["valor"];
 $btn = $_POST["consulta"];
 $id = $_SESSION['id'];
 
