@@ -11,7 +11,7 @@ $btn = $_POST["alteracao"];
 $id = $_SESSION['id'];
 
 
-//RESOLVER ERRO CÓDIGO VARIÁVEL $sql
+
 $sql = "UPDATE produtos SET descricao = '$descricao', marca = '$marca', quantidade = $quantidade, preco = $preco WHERE codproduto = $codproduto";
 $query = $mysqli->query($sql) or die("Falha na execução do código SQL: " . $mysqli->error);
 

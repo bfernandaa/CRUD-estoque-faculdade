@@ -9,14 +9,22 @@ $id = $_SESSION['id'];
 $sql = "SELECT descricao, marca, quantidade, preco FROM produtos WHERE codproduto=$codproduto";
 $query = $mysqli->query($sql) or die("Falha na execução do código SQL: " . $mysqli->error);
 
-print_r($sql);
+//print_r($sql);
 
-if ($result = $mysqli -> query($sql)) {
-    while ($row = $result -> fetch_row()) {
-      printf ("%s (%s)\n", $row["codproduto"], $row["descricao"], $row["marca"], $row["quantidade"], $row["preco"]);
-    }
-    $result -> free_result();
-  }
+echo "<table>";
+while($exibe = mysql_fetch_assoc($sql)){
+   echo "<tr><td>Código do Produto:</td>";
+   echo "<td>".$exibe["codproduto"]."</td></tr>";
+   echo "<tr><td>Descrição do Produto:</td>";
+   echo "<td>".$exibe["descricao"]."</td></tr>";
+   echo "<tr><td>Marca:</td>";
+   echo "<td>".$exibe["marca"]."</td></tr>";
+   echo "<tr><td>Quantidade:</td>";
+   echo "<td>".$exibe["quantidade"]."</td></tr>";
+   echo "<tr><td>Preço:</td>";
+   echo "<td>".$exibe["preco"]."</td></tr>";
+}
+echo "</table>";
 
 // header("Location: painel.php");
 
