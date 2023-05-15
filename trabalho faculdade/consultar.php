@@ -30,17 +30,9 @@ $result = $mysqli->query($sql) or die("Falha na execução do código SQL: " . $
 
 echo "<table>";
 while($exibe = $result->fetch_assoc()){
-   echo "<tr><th>Código do Produto:</th>";
-   echo "<td>".$exibe["codproduto"]."</td></tr>";
-   echo "<tr><th>Descrição do Produto:</th>";
-   echo "<td>".$exibe["descricao"]."</td></tr>";
-   echo "<tr><th>Marca:</th>";
-   echo "<td>".$exibe["marca"]."</td></tr>";
-   echo "<tr><th>Quantidade:</th>";
-   echo "<td>".$exibe["quantidade"]."</td></tr>";
-   echo "<tr><th>Preço:</th>";
-   echo "<td>".$exibe["preco"]."</td></tr>";
-}
+   echo "<tr><th>Código do Produto</th><th>Descrição do Produto</th><th>Marca:</th><th>Quantidade:</th><th>Preço:</th>";
+   echo "<tr><td>".$exibe["codproduto"]."</td><td>".$exibe["descricao"]."</td><td>".$exibe["marca"]."</td><td>".$exibe["quantidade"]."</td><td>".$exibe["preco"]."</td></tr>";
+   
 echo "</table>";
 
 // header("Location: painel.php");
