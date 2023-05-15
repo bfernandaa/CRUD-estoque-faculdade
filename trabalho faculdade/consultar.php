@@ -7,12 +7,12 @@ $btn = $_POST["consulta"];
 $id = $_SESSION['id'];
 
 $sql = "SELECT descricao, marca, quantidade, preco FROM produtos WHERE codproduto=$codproduto";
-$query = $mysqli->query($sql) or die("Falha na execução do código SQL: " . $mysqli->error);
+$result = $mysqli->query($sql) or die("Falha na execução do código SQL: " . $mysqli->error);
 
 //print_r($sql);
 
 echo "<table>";
-while($exibe = mysql_fetch_assoc($sql)){
+while($exibe = $result->fetch_assoc()){
    echo "<tr><td>Código do Produto:</td>";
    echo "<td>".$exibe["codproduto"]."</td></tr>";
    echo "<tr><td>Descrição do Produto:</td>";
