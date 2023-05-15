@@ -30,15 +30,15 @@ $result = $mysqli->query($sql) or die("Falha na execução do código SQL: " . $
 
 echo "<table>";
 while($exibe = $result->fetch_assoc()){
-   echo "<tr><td>Código do Produto:</td>";
+   echo "<tr><th>Código do Produto:</th>";
    echo "<td>".$exibe["codproduto"]."</td></tr>";
-   echo "<tr><td>Descrição do Produto:</td>";
+   echo "<tr><th>Descrição do Produto:</th>";
    echo "<td>".$exibe["descricao"]."</td></tr>";
-   echo "<tr><td>Marca:</td>";
+   echo "<tr><th>Marca:</th>";
    echo "<td>".$exibe["marca"]."</td></tr>";
-   echo "<tr><td>Quantidade:</td>";
+   echo "<tr><th>Quantidade:</th>";
    echo "<td>".$exibe["quantidade"]."</td></tr>";
-   echo "<tr><td>Preço:</td>";
+   echo "<tr><th>Preço:</th>";
    echo "<td>".$exibe["preco"]."</td></tr>";
 }
 echo "</table>";
