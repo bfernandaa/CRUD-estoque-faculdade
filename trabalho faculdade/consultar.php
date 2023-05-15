@@ -6,7 +6,7 @@ $codproduto = $_POST["codproduto"];
 $btn = $_POST["consulta"];
 $id = $_SESSION['id'];
 
-$sql = "SELECT descricao, marca, quantidade, preco FROM produtos WHERE codproduto=$codproduto";
+$sql = "SELECT codproduto, descricao, marca, quantidade, preco FROM produtos WHERE codproduto=$codproduto";
 $result = $mysqli->query($sql) or die("Falha na execução do código SQL: " . $mysqli->error);
 
 //print_r($sql);
