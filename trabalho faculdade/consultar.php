@@ -32,7 +32,7 @@ echo "<table>";
 while($exibe = $result->fetch_assoc()){
    echo "<tr><th>Código do Produto</th><th>Descrição do Produto</th><th>Marca:</th><th>Quantidade:</th><th>Preço:</th>";
    echo "<tr><td>".$exibe["codproduto"]."</td><td>".$exibe["descricao"]."</td><td>".$exibe["marca"]."</td><td>".$exibe["quantidade"]."</td><td>".$exibe["preco"]."</td></tr>";
-   
+}
 echo "</table>";
 
 // header("Location: painel.php");
