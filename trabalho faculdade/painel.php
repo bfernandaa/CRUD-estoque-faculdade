@@ -14,7 +14,9 @@ include('valida_login.php');
 <body>
     <header>
         <button id="btSair"><a href="logout.php">Sair</a></button>
-        <div id="logoBomPreco"><img src="imagens/logo-mercado2.PNG" alt=""></div>
+        <div id="logoBomPreco">
+            <a href="painel.php"><img src="imagens/logo-mercado2.PNG" alt=""></a>
+        </div>
         <h1 id="titulo">Gerenciamento de Estoque</h1>
         <h3 id="welcome">Bem-vindo(a), <?php echo $_SESSION['nome']; ?></h3>
     </header>
