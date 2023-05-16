@@ -217,3 +217,14 @@ table{
     top: 55%;
     right: 47%;
  }
+
+ .sucesso{
+    position: absolute;
+    background-color: #a7c957;
+    padding: 10px;
+    border-radius: 10px;
+    color: #344e41;
+    bottom: 4%;
+    right: 25%;
+    
+ }
