@@ -45,4 +45,6 @@ if($mysqli->query($sql)){
 
 ?>
 
+<a href="painel.php" id="btn-voltar">Voltar</a>
+
 <img src="imagens/imagemRodape2.png" alt="" id="rodape">
