@@ -200,7 +200,9 @@ header{
 table{
     border: 2px solid #2D3191;
     position: absolute;
-    /* top: 55%; */
+    top: 30%;
+    width: 90%;
+    margin-left: 70px;
     
 }
  table th{
