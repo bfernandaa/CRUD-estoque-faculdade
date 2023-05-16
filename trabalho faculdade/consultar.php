@@ -21,7 +21,6 @@ session_start();
 
 $codproduto = $_POST["codproduto"];
 $btn = $_POST["consulta"];
-$marca = $_POST["marca"];
 $id = $_SESSION['id'];
 
 $sql = "SELECT codproduto, descricao, marca, quantidade, preco FROM produtos WHERE codproduto=$codproduto";

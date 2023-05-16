@@ -13,7 +13,7 @@ include('valida_login.php');
 </head>
 <body>
     <header>
-        <button id="btSair"><a href="logout.php">Sair</a></button>
+        <a href="logout.php" id="btSair">Sair</a>
         <div id="logoBomPreco">
             <a href="painel.php"><img src="imagens/logo-mercado2.PNG" alt=""></a>
         </div>
