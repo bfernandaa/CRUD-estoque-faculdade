@@ -12,7 +12,7 @@
         <div id="logoBomPreco">
            <a href="painel.php"><img src="imagens/logo-mercado2.PNG" alt=""></a> 
         </div>
-        <button id="btSair"><a href="logout.php">Sair</a></button>
+        <a href="logout.php" id="btSair">Sair</a>
         <h1 id="titulo">Gerenciamento de Estoque</h1>
     </header>
 <?php
@@ -24,10 +24,8 @@ $btn = $_POST["consulta"];
 $marca = $_POST["marca"];
 $id = $_SESSION['id'];
 
-$sql = "SELECT codproduto, descricao, marca, quantidade, preco FROM produtos WHERE codproduto=$codproduto OR marca LIKE '%$marca'";
+$sql = "SELECT codproduto, descricao, marca, quantidade, preco FROM produtos WHERE codproduto=$codproduto";
 $result = $mysqli->query($sql) or die("Falha na execução do código SQL: " . $mysqli->error);
-
-//print_r($sql);
 
 echo "<table>";
 while($exibe = $result->fetch_assoc()){
@@ -36,6 +34,6 @@ while($exibe = $result->fetch_assoc()){
 }
 echo "</table>";
 
-// header("Location: painel.php");
-
 ?>
+
+<a href="painel.php" id="btn-voltar">Voltar</a>

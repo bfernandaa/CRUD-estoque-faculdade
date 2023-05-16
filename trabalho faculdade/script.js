@@ -27,7 +27,6 @@ function mudarSessao(){
         <form action="consultar.php" method="POST" id="formulario">
             <h2>Consultar Produto</h2>
             <input class="inputProduto" name="codproduto" type="number" placeholder="Código do Produto"><br>
-            <input class="inputProduto" name="marca" type="text" placeholder="Marca">
             <input name="consulta" id="btnform" type="submit" value="Consultar">
         </form>
         `

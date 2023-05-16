@@ -33,9 +33,9 @@ header{
 }
 
 #btSair{
-    width: 60px;
+    width: 70px;
     height: 30px;
-    font-size: 15px;
+    font-size: .95rem;
     border: none;
     background-color:#D92527;
     border-radius: 10px;
@@ -45,13 +45,9 @@ header{
     transition: 0.5s;
     position: absolute;
     right: 10px;
-    
-}
-
-#btSair a{
     text-decoration: none;
-    background-color: #D92527;
-    color: #fefae0;
+    text-align: center;
+    padding-top: 7px;
 }
 
 
@@ -60,10 +56,6 @@ header{
     transition: .5s;
 }
 
-#btSair a:hover{
-    background-color: #2D3191;
-    transition: .2s;
-}
 
 #logoBomPreco{
     width:250px;
@@ -214,19 +206,14 @@ table{
     border: 2px solid #2D3191;
     text-align: center;
  }
-/* footer{
 
-    width: 100%;
-    bottom: 0;
-    position: fixed;
-    width: 100%;
-    text-align: right;
-    height: 60px;
-}
-footer img{
-    margin: 20px;
-    position: relative;
-    width: 45px;
-    
-    
-} */
+ #btn-voltar{
+    text-decoration: none;
+    background-color: #2D3191;
+    color: #EBEBEB;
+    padding: 15px;
+    border-radius: 15px;
+    position: absolute;
+    top: 55%;
+    right: 47%;
+ }
