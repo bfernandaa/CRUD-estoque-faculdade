@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -14,10 +18,16 @@
         </div>
         <a href="logout.php" id="btSair">Sair</a>
         <h1 id="titulo">Gerenciamento de Estoque</h1>
+        <h3 id="welcome">Bem-vindo(a), <?php echo $_SESSION['nome']; ?></h3>
     </header>
+    <section id="areaProdutos">
+        <button id="actionProdutoCadastrar" class="btn" >Cadastrar Produto</button>
+        <button id="actionProdutoConsultar" class="btn" >Consultar Produto</button>
+        <button id="actionProdutoEditar" class="btn" >Editar Produto</button>
+        <button id="actionProdutoExcluir" class="btn" >Excluir Produto</button>
+    </section>
 <?php
 include('conexao.php');
-session_start();
 
 $codproduto = $_POST["codproduto"];
 $descricao = $_POST["descricao"];
