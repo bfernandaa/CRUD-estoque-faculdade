@@ -45,6 +45,10 @@ if($mysqli->query($sql)){
 
 ?>
 
-<a href="painel.php" id="btn-voltar">Voltar</a>
+    <a href="painel.php" id="btn-voltar">Voltar</a>
 
-<img src="imagens/imagemRodape2.png" alt="" id="rodape">
+    <img src="imagens/imagemRodape2.png" alt="" id="rodape">
+
+    <script src="script.js"></script>
+</body>
+</html>
